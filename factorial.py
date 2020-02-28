@@ -31,7 +31,7 @@ def calculate_factorial(num):
         return result
     
 if __name__ == '__main__':
-    input_file = open('input.txt', 'r')
+    input_file = open('newProj5409-master/input.txt', 'r')
     num_list = (input_file.read().split('\n'))
     factorial()
     input_file.close()
