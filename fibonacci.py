@@ -17,8 +17,9 @@ def fibonacci():
         request_count+=1
         start_time = timeit.default_timer()
         fibo = calculate_fibonacci(int(num))
+	fibo = ' '.join(str(i) for i in fibo)
         end_time = timeit.default_timer()
-        output_file.write(str(request_count)+' '+str(end_time-start_time)+' '+str(num)+' '+str(fibo) + '\n')
+        output_file.write(str(request_count)+','+str(end_time-start_time)+','+str(num.rstrip())+','+str(fibo) + '\n')
     output_file.close()
 
 def calculate_fibonacci(num):
