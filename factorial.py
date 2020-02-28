@@ -19,7 +19,7 @@ def factorial():
         start_time = timeit.default_timer()
         fact = calculate_factorial(int(num))
         end_time = timeit.default_timer()
-        output_file.write(str(request_count)+' '+str(end_time-start_time)+' '+str(num)+' '+str(fact) + '\n')
+        output_file.write(str(request_count)+','+str(end_time-start_time)+','+str(num.rstrip())+','+str(fact) + '\n')
     output_file.close()
 
 def calculate_factorial(num):
