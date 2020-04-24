@@ -1,4 +1,4 @@
-# newProj5409
+# Mesos Marathon Orchestrator
 
 #### This repository contains code for an application, which performs two tasks using two services in parallel.
 #### The first service is used to find factorial values of 100 random numbers. The second service calculates Fibonacci sequence of 100 random numbers given in a text file.
